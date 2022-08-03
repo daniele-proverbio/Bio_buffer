@@ -3,9 +3,6 @@
 % transitions driven by fold bifurcations, in a biological toy model
 % (autoactivating feedback loop motif for gene regulation)
 
-% See Quad 2.3, 4/8/2021 for explanations and reasoning
-% See Quad. 2.3, 4/11/2021 for comprehensive plan
-
 %% Author
 % Daniele Proverbio, 04/08/2021
 % daniele.proverbio@outlook.com / @uni.lu
