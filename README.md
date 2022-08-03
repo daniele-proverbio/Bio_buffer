@@ -1,5 +1,5 @@
 # Dynamical buffers for biological motifs
-Code for the project "Mechanisms to buffer variability in cell regulation motifs next to criticality".  
+Code for the project "Buffering variability in cell regulation motifs next to criticality".  
 Author: Daniele Proverbio, LCSB, 2022
 
 ## Analytical results
