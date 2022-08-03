@@ -49,7 +49,9 @@ for experiment =1 : N_Exp                        %repeated experiments
                 sol(tic,m,experiment) = x_in;
             else
                 f = protein_production(p-dt,sol(tic-1,m,experiment),val1,val2(m),enne(simu));
-                sol(tic,m,experiment) = sol(tic-1,m,experiment) + f * dt + noise*sqrt(dt)*randn;
+                sol(tic,m,experiment) = sol(tic-1,m,experiment) + f * dt + noise*sqrt(dt)*randn;    % white noise
+                %sol(tic,m,experiment) = sol(tic-1,m,experiment) + f * dt + (sol(tic-1,m,experiment)^2)*noise*sqrt(dt)*randn/(1+sol(tic-1,m,experiment)^2) + 0.5*((2*sol(tic-1,m,experiment)^3*noise^2)/(1+sol(tic-1,m,experiment)^2)^3)*((sqrt(dt)*randn)^2 - dt);  % State-dependent noise, Milstein method
+
             end            
         end
     end
